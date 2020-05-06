@@ -11,14 +11,14 @@
 >
 > ```python
 > def partial(func, *args, **kwargs):
->     def newfunc(*fargs, **fkwargs):
->         newkws = kwargs.copy()
->         newkws.update(fkwargs)
->         return func(*args, *fargs, **newkws)
->     newfunc.func = func
->     newfunc.args = args
->     newfunc.kwargs = kwargs
->     return newfunc
+>        def newfunc(*fargs, **fkwargs):
+>            newkws = kwargs.copy()
+>            newkws.update(fkwargs)
+>            return func(*args, *fargs, **newkws)
+>        newfunc.func = func
+>        newfunc.args = args
+>        newfunc.kwargs = kwargs
+>        return newfunc
 > ```
 >
 > 
