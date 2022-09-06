@@ -1,0 +1,14 @@
+
+* 查看JVM堆内存占用
+
+  jmap -heap 7276 | head -n20
+  
+* 通过jmap命令查看堆内存中的对象
+
+  jmap -histo 7276 | head -n20
+
+* jstat -gcutil -h20 pid 1000
+
+* 检测死锁
+
+  jstack -l pid
