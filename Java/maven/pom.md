@@ -33,3 +33,46 @@ ${project.artifactId} 项目的artifactId
 　　<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
 ```
+
+
+
+### maven-resources-plugin include 通配符
+
+* 全部
+
+  ````java
+  
+  <resource>
+    <directory>src/main/resources</directory>
+    <filtering>false</filtering>
+    <includes>
+      <include>**/*</include>
+    </includes>
+  </resource>
+  ````
+
+* 所有yaml文件，不递归子目录
+
+  ```java
+  <resource>
+    <directory>src/main/resources</directory>
+    <filtering>false</filtering>
+    <includes>
+      <include>*.yml</include>
+    </includes>
+  </resource>
+  ```
+
+* 所有yaml文件，递归子目录
+
+  ```java
+  <resource>
+    <directory>src/main/resources</directory>
+    <filtering>false</filtering>
+    <includes>
+      <include>**/*.yml</include>
+    </includes>
+  </resource>
+  ```
+
+  

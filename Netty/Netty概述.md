@@ -60,5 +60,14 @@ NIO的显著优势：
 
 * 1. NIO的API较为复杂，你必须熟练掌握Selector、ServerSocketChannel、SocketChannel、ByteBuffer 等。
   2. NIO需要用到多线程和Reactor，熟练掌握多线程和Reactor等网络开发技能是使用NIO的前提基础。
-  3. 
+
+### 四、 Java NIO三件套
+
+1. Buffer
+
+   本质上是一个数组，维护了position、limit、capacity状态
+
+2. Selector
+
+3. Channel
 

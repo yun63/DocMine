@@ -79,7 +79,7 @@ $ docker ps [OPTIONS]
 
 3. 删除容器
 
-$ docker restart [OPTIONS] CONTAINER [CONTAINER...]
+$ docker r [OPTIONS] CONTAINER [CONTAINER...]
 
 * --**force**, -**f**: 强制删除正在运行的容器
 
@@ -90,10 +90,6 @@ $ docker rename CONTAINER NEW_NAME
 #### 3 运行
 
 启动容器，可直接打开终端连接。
-
-```
-1$ docker rename CONTAINER NEW_NAME
-```
 
 - -**a**: 连接（attach）
 - -**i**: 交互（stdin）
